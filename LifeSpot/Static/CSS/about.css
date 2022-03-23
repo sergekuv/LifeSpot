@@ -1,0 +1,14 @@
+﻿/*а как лучше группировать стили? по файлу на страницу, общий файл, или еще как-то?*/
+
+#feedbackForm {display:none}
+
+.feedbackSection {
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+    padding: 10px;
+}
+
+.feedbackInput {
+    width: 300px;
+}
+

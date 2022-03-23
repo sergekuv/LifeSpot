@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
+    <script src="../Static/JS/index.js"></script>
+   <!-- <script>PrintSession(HandleSession());</script>-->
+
 </head>
 <body>
+    <!-- onload="setTimeout(alert('Will you Subscribe?'), 3000);" -->
+
     <header>
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <p>Покажем, что происходит прямо сейчас</p>
         <form class="choseLocation" action="">
-            Введите место для поиска трансляции: <input type="text" name="place">
-            <input type="submit" value="Найти">
+
+            <!--До упражнения 29.5.4-->
+            Введите место для поиска трансляции: <input type="text" id="userInput" oninput="FilterVideos( document.getElementById('userInput').value.toLowerCase() );" />
+            
+            <!--Введите место для поиска трансляции: <input type="text" id="userInput" oninput="InputParseFunction();" />-->
+
         </form>
     </header>
+
+    <!--SIDEBAR-->
     <div class="bordered">
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
         </div>
-        <aside id="sidebar">
-            <div class="navbar">
-                <a href="#top"><p>О проекте</p></a>
-                <a href="#top"><p>Все трансляции</p></a>
-            </div>
-        </aside>
+
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
@@ -39,9 +45,8 @@
         </div>
 
     </div>
-    <footer>
-        <p>Some footer test</p>
-        <p>Contacts: ....</p>
-    </footer>
+
+
 </body>
+<!--FOOTER-->
 </html>

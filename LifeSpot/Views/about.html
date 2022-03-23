@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LifeSpot</title>
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <link href="../Static/CSS/about.css" rel="stylesheet" type="text/css">
+    <script src="../Static/JS/index.js"></script>
+    <script defer src="../Static/JS/about.js"></script>
+</head>
+
+<!--SIDEBAR-->
+<body>
+    <header>
+        <h1>About the project</h1>
+    </header>
+    <article>
+        <p>Пока мы делали этот проект, катки на Манхэттене и в Портсмуте разобрали. Теперь смотреть не на что. 
+        Будем искать камеру на катке в Норильске...</p>
+        <p>А пока можете оставить отзыв</p>
+    </article>
+
+    <div class="feedbackSection">
+        <input type="checkbox" id="feedbackCheckBox" onclick="CheckBoxClickProcessing('feedbackCheckBox')" >
+        <label for="feedbackCheckBox">Хочу оставить отзыв</label>
+
+        <form action="" id="feedbackForm">
+            <p>Оставить комментарий</p>
+            Ваше имя: <br /><input class="feedbackInput" type="text" id="userName" value=""/>
+            <p></p>
+            Ваш отзыв: <br /><textarea class="feedbackInput" id="feedbackContent" value ="someText" cols="40" rows="5"></textarea><br />
+            <button type="button" onclick='SubmitFeedback("userName", "feedbackContent", "allFeedbacks")'>Отправить</button>
+        </form>
+    </div>
+    <article id="allFeedbacks">
+        
+    </article>
+
+</body>
+<!--FOOTER-->
+
+</html>
