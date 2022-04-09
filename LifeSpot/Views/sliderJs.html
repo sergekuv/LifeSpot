@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LifeSpot</title>
+    <link href="../Static/CSS/common.css" rel="stylesheet" type="text/css">
+    <link href="../Static/CSS/sliderJs.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="../Static/JS/about.js"></script>
+</head>
+
+<body onload="startListen()">
+    <p>This is "SliderJs" page</p>
+    <!--sliderTop-->
+    <!--SIDEBAR-->
+
+    <div class="slideshowContainer" id="slideContainer">
+
+        <div class="mySlides">
+            <img id="img1" class="slideImg" src="../Static/Images/0.jpg" style="width:100%">
+            <div class="text">Lisboa</div>
+        </div>
+
+        <div class="mySlides">
+            <img class="slideImg" src="../Static/Images/1.jpg" style="width:100%">
+            <div class="text">London</div>
+        </div>
+
+        <div class="mySlides">
+            <img class="slideImg" src="../Static/Images/2.jpg" style="width:100%">
+            <div class="text">Manhattan</div>
+        </div>
+
+        <div class="mySlides">
+            <img class="slideImg" src="../Static/Images/3.jpg" style="width:100%">
+            <div class="text">Санкт-Петербург</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div style="text-align:center">
+        <p>Для прокрутки/выбора слайдов воспользуйтесь стрелками или щелкните на одну из точек под рисунком</p>
+    </div>
+
+    <!--FOOTER-->
+
+</body>
+</html>
