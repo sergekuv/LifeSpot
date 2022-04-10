@@ -35,7 +35,7 @@ function AskForName() {
 
 function CountPageElements() {
     let arr2 = document.getElementsByTagName("*");
-    debugger
+    //debugger
     for (let i = 0; i < arr2.length; i++) {
         console.log(`${arr2[i]} is ${arr2[i].className}`)
     }

@@ -82,7 +82,6 @@ namespace LifeSpot
                 // Загружаем шаблон страницы, вставляя в него элементы
                 var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
                     .Replace("<!--SIDEBAR-->", sideBarHtml)
-                    .Replace("<!--sliderTop-->", sliderTopHtml)
                     .Replace("<!--FOOTER-->", footerHtml);
 
                 await context.Response.WriteAsync(html.ToString());
